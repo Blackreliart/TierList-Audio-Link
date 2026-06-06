@@ -1,0 +1,13 @@
+{
+  "manifest_version": 3,
+  "name": "Tierlist Song Player",
+  "version": "1.1",
+  "description": "A Chrome extension that adds a quick-search button to Tiermaker.com images. It extracts image titles and opens them directly on YouTube, automatically cleaning up file extensions and technical clutter.",
+  "permissions": ["scripting"],
+  "content_scripts": [
+    {
+      "matches": ["*://tiermaker.com/*"],
+      "js": ["content.js"]
+    }
+  ]
+}
